@@ -50,11 +50,6 @@ header {
     margin-top: 200px;
 }
 
-.containerForm {
-    flex: 1;
-    display: flex;
-    padding: 5px 8px 0 14px;
-}
 
 .form {
     display: flex;
@@ -71,19 +66,29 @@ header {
     padding: 0 15px;
 }
 
+.containerForm {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+   
+}
+
 .form:hover {
     background-color: #303134;
 }
 
-#imgLupa {
-    height: 20px;
-    width: 26px;
+.containerLupa {
     display: flex;
     align-items: center;
-    padding-right: 13px;
-    margin-top: 6px;
+    justify-content: center;
     cursor: pointer;
     background-color: transparent;
+}
+
+#imgLupa {
+    height: 30px;
+    width: 20px;
 }
 
 #input {
@@ -99,16 +104,13 @@ header {
     -webkit-tap-highlight-color: transparent;
     margin-top: 1px;
     height: 34px;
-    width: 450px;
+    width: auto;
     font-size: 16px;
 }
 
 .busquedaImg {
     display: flex;
-    flex: 0 0 auto;
-    margin-top: -5px;
-    align-items: stretch;
-    flex-direction: row;
+    align-items: center;
     cursor: pointer;
     background-color:  transparent;
 }
@@ -123,7 +125,7 @@ header {
 }
 
 .bttons {
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-items: center;
     margin: auto;
@@ -176,10 +178,9 @@ footer {
 .about {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
     margin: 0;
     padding: 0;
+    background-color: #171717;
 }
 
 .about-in {
